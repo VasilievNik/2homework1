@@ -1,6 +1,6 @@
 package com.company;
 
-public class ravenclaw extends Person{
+public class ravenclaw extends hogwarts {
     private int intelligence;
     private int curiosity;
     private int creativity;

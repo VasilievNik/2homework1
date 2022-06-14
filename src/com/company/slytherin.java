@@ -1,6 +1,6 @@
 package com.company;
 
-public class slytherin extends Person{
+public class slytherin extends hogwarts {
     private int cunning;
     private int ambition;
     private int leadership;

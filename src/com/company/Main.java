@@ -6,6 +6,7 @@ public class Main {
     public static gryffindor[] studentsG = new gryffindor[3];
     public static slytherin[] studentsS = new slytherin[3];
     public static ravenclaw[] studentsR = new ravenclaw[3];
+    hogwarts hogwarts = new hogwarts("tea", "a", 3, 5);
 
     public static void main(String[] args) {
         hufflepuff Zaharia_Smith = new hufflepuff("Zaharia", "Smith", 99, 12, 1000, 6, 7);
@@ -40,6 +41,7 @@ public class Main {
         gryffindorBestStudent();
         slytherinBestStudent();
         ravenclawBestStudent();
+        bestStudentOfTwo(Seddric_Diggory1, Jastin_Fintch2);
 
     }
 
@@ -87,7 +89,15 @@ public class Main {
         System.out.println(BestStudent3);
     }
 
-    public static void BestStudentOfTwo(){ //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Как я сюда могу передать двух студентов разных типов, не зная заренне, что это будут за типы?
+    public static void bestStudentOfTwo(hogwarts Student1, hogwarts Student2){
+        if(Student1.getPowah()+Student1.getDistance()<Student2.getPowah()+Student2.getDistance()){
+            System.out.println("Лучший студент из двух:");
+            System.out.println(Student2.getFirstName());
+        }
+        else{
+            System.out.println("Лучший студент из двух:");
+            System.out.println(Student1.getFirstName());
+        }
     }
 
 }
