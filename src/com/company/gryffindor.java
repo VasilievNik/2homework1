@@ -1,6 +1,6 @@
 package com.company;
 
-public class gryffindor extends Person {
+public class gryffindor extends hogwarts {
     private int bravery;
     private int daring;
     private int chivalry;

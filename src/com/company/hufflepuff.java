@@ -1,6 +1,6 @@
 package com.company;
 
-public class hufflepuff extends Person{
+public class hufflepuff extends hogwarts {
     private final int work;
     private final int loyalty;
     private final int truth;
